@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo ${env.JAVA_HOME}
+                echo "Java Home: ${env.JAVA_HOME}"
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
